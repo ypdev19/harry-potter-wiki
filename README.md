@@ -1,2 +1,12 @@
-# harry-potter-wiki
-A basic Harry Potter Wiki to practice some React js coding
+# Harry Potter wiki ⚡💥
+
+A basic Wiki app to practice my React js coding skills.
+
+How to run
+--------------------------------
+
+Just do npm run
+
+Credits 🏆
+--------------------------------
+Api endpoints by [HP-API](https://hp-api.herokuapp.com/)
