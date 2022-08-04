@@ -9,7 +9,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //Pages
 import StudentList from "./pages/StudentList";
-import CardDetails from "./components/Card/CardDetails";
 
 function App() {
   return (
@@ -19,13 +18,6 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<StudentList />} />
-        <Route path="/:id" element={<CardDetails />} />
-
-        {/* <Route path="/episodes" element={<Episodes />} /> */}
-        {/* <Route path="/episodes/:id" element={<CardDetails />} /> */}
-
-        {/* <Route path="/location" element={<Location />} /> */}
-        {/* <Route path="/location/:id" element={<CardDetails />} /> */}
       </Routes>
     </Router>
   );
