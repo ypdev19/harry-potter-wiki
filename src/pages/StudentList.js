@@ -6,7 +6,7 @@ const StudentList = () => {
   let [house, updateHouse] = useState("");
   let [fetchedData, updateFetchedData] = useState([]);
 
-  const api = house ? `http://hp-api.herokuapp.com/api/characters/house/${house}` : `http://hp-api.herokuapp.com/api/characters/students`;
+  const api = house ? `https://hp-api.herokuapp.com/api/characters/house/${house}` : `https://hp-api.herokuapp.com/api/characters/students`;
 
   useEffect(() => {
     (async function () {
