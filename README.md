@@ -2,9 +2,16 @@
 
 A basic Wiki app about my favorite book/movie saga to practice my React js coding skills.
 
-Live demo
+Live Demo 💻
 --------------------------------
-See app live demo [here](https://harry-potter-wiki.herokuapp.com/)
+
+You can check the app live demo [here](https://harry-potter-wiki.herokuapp.com/)
+
+How to Run ▶️
+--------------------------------
+
+Use `npm install` in order to install the necessary packages for the project.
+Then run with `npm start`
 
 Credits 🏆
 --------------------------------
