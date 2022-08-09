@@ -1,6 +1,6 @@
 # Harry Potter wiki ⚡💥
 
-A basic Wiki app to practice my React js coding skills.
+A basic Wiki app about my favorite book/movie saga to practice my React js coding skills.
 
 Live demo
 --------------------------------
