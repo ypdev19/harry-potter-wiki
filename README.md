@@ -10,8 +10,7 @@ You can check the app live demo [here](https://harry-potter-wiki.herokuapp.com/)
 How to Run ▶️
 --------------------------------
 
-Use `npm install` in order to install the necessary packages for the project.
-Then run with `npm start`
+Use `npm install` in order to install the necessary packages for the project and then run it with `npm start`
 
 Credits 🏆
 --------------------------------
