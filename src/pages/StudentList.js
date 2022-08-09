@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Card from "../components/Card/Card";
-import Filter from "../components/Filter/Filter";
+import Filter from "../components/common/filter/Filter";
+import Pagination from '../components/common/pagination/Pagination';
 
 const StudentList = () => {
   let [house, updateHouse] = useState("");
@@ -12,8 +13,18 @@ const StudentList = () => {
     (async function () {
       let data = await fetch(api).then((res) => res.json());
       updateFetchedData(data);
+      setLoading(false);
     })();
   }, [api]);
+
+  const [loading, setLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [recordsPerPage] = useState(10);
+
+  const indexOfLastRecord = currentPage * recordsPerPage;
+  const indexOfFirstRecord = indexOfLastRecord - recordsPerPage;
+  const currentRecords = fetchedData.slice(indexOfFirstRecord, indexOfLastRecord);
+  const nPages = Math.ceil(fetchedData.length / recordsPerPage);
 
   return (
     <div className="App">
@@ -25,12 +36,17 @@ const StudentList = () => {
             updateHouse={updateHouse}
           />
           <div className="col-lg-8 col-12">
-            <div className="row">
-              <Card results={fetchedData} />
+            <div className="row">            
+              <Card results={currentRecords} />
             </div>
           </div>
         </div>
       </div>
+      <Pagination
+          nPages={nPages}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+      />
     </div>
   );
 };
