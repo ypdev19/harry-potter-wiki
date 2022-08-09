@@ -49,5 +49,3 @@ export default function Pagination ({nPages, currentPage, setCurrentPage}) {
         </nav>
     );
 }
-
-// export default Pagination;
