@@ -1,6 +1,12 @@
 # Harry Potter wiki ⚡💥
 
-A basic Wiki app about my favorite book/movie saga to practice my React js coding skills.
+A basic Wiki app about my favorite book/movie saga.
+
+What it does
+--------------------------------
+
+As default load, it gets all students from all Hogwarts houses, each student basic info is represented with a card and the list is paginated.
+As an additional option to apply a more specific search, there's a filter available to search the students by a specific house.
 
 Live Demo 💻
 --------------------------------
