@@ -10,8 +10,8 @@ const StudentList = () => {
   let [house, updateHouse] = useState("");
   let [fetchedData, updateFetchedData] = useState([]);
 
-  const api = house ? `https://hp-api.herokuapp.com/api/characters/house/${house}` : `https://hp-api.herokuapp.com/api/characters/students`;
-  
+  const api = house ? `https://hp-api.onrender.com/api/characters/house/${house}` : `https://hp-api.onrender.com/api/characters/students`;
+
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
